@@ -5,6 +5,8 @@
 
 
 import cProfile
+import os
+from plagiarism import get_file_contents,filter_content,calc_similarity
 def main_run_code():
         path1 = input("输入论文原文的文件的绝对路径：")
         path2 = input("输入抄袭版论文的文件的绝对路径：")
